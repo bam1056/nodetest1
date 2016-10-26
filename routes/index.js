@@ -44,8 +44,7 @@ router.post('/adduser', function(req, res) {
             res.send("There was a problem adding the information to the database.");
         }
         else {
-            // And forward to success page
-            //res.redirect("userlist");
+            res.send(doc);
         }
     });
 });
